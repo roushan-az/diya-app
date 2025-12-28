@@ -20,7 +20,7 @@ export default function ProductCarousel() {
 
   return (
     <section className="carousel-section">
-      <h2>Vikram Tea Premium Collection</h2>
+      <h2>DiyaTea Premium Collection</h2>
 
       <div className="carousel-wrapper">
         <button className="nav-btn" onClick={prev}>‹</button>
