@@ -91,12 +91,19 @@ body {
   padding: 12px 24px;
 }
 
-/* HERO */
-.hero img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
+.hero {
+  width: 100vw;
+  height: 320px;          /* ribbon height */
+  overflow: hidden;
 }
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;       /* 🔑 stretches image to fit */
+  display: block;
+}
+
 
 /* PRODUCTS */
 .collection {

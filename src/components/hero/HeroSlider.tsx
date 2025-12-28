@@ -4,6 +4,7 @@ export default function HeroSlider() {
       <img
         src="/images/hero/slide1.jpg"
         alt="Diya International"
+        className="hero-img"
       />
     </section>
   );
