@@ -10,8 +10,7 @@ export default function Home() {
       <section className="collection">
         <div className="container">
           <h1>
-            DiyaTea Premium Collection | Buy Upper Assam and Second Flush Tea
-            Online in India
+            DiyaDazzle Premium Collection | Buy Upper Bihar Makhana & Water Chestnut Flour Online in India
           </h1>
 
           <ProductGrid />

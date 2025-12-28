@@ -20,7 +20,7 @@ export default function ProductCarousel() {
 
   return (
     <section className="carousel-section">
-      <h2>DiyaTea Premium Collection</h2>
+      <h2>DiyaDazzle Premium Collection</h2>
 
       <div className="carousel-wrapper">
         <button className="nav-btn" onClick={prev}>‹</button>
@@ -48,9 +48,10 @@ export default function ProductCarousel() {
         <button className="nav-btn" onClick={next}>›</button>
       </div>
 
-      <div className="view-all">
+      {/* <div className="view-all">
         <button>View all products</button>
-      </div>
+      </div> */}
+
     </section>
   );
 }

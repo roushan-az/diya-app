@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        Copyright © 2025 Diya Tea. Powered by OneRoof Technologies
+        Copyright © 2025 Diya International. Powered by Tour Planner
       </div>
     </footer>
   );
