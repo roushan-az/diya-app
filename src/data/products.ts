@@ -27,5 +27,41 @@ export const products: Product[] = [
     originalPrice: 595,
     image: "/images/products/water-chestnut-flour.jpg",
     description: "Premium quality water chestnut flour sourced naturally..."
+  },
+   {
+    id: 3,
+    name: "Raw Makhana – 200g Pouch",
+    slug: "raw-makhana-200g",
+    price: "***",
+    originalPrice: 298,
+    image: "/images/products/raw-makhana.jpg",
+    description: "Premium quality raw makhana sourced naturally..."
+  },
+  {
+    id: 4,
+    name: "Water Chestnut Flour – 200gm Pouch",
+    slug: "water-chestnut-flour-200g",
+    price: "***",
+    originalPrice: 595,
+    image: "/images/products/water-chestnut-flour.jpg",
+    description: "Premium quality water chestnut flour sourced naturally..."
+  },
+   {
+    id: 5,
+    name: "Raw Makhana – 200g Pouch",
+    slug: "raw-makhana-200g",
+    price: "***",
+    originalPrice: 298,
+    image: "/images/products/raw-makhana.jpg",
+    description: "Premium quality raw makhana sourced naturally..."
+  },
+  {
+    id: 6,
+    name: "Water Chestnut Flour – 200gm Pouch",
+    slug: "water-chestnut-flour-200g",
+    price: "***",
+    originalPrice: 595,
+    image: "/images/products/water-chestnut-flour.jpg",
+    description: "Premium quality water chestnut flour sourced naturally..."
   }
 ];
