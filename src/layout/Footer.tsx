@@ -18,13 +18,31 @@ export default function Footer() {
           <h4>Shop</h4>
           <ul>
             <li>
-              <Link to="/shop">Shop All</Link>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="disabled-link"
+              >
+                Shop All
+              </a>
             </li>
             <li>
-              <Link to="/makhana-story">Makhana</Link>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="disabled-link"
+              >
+                Makhana
+              </a>
             </li>
             <li>
-              <Link to="/flours">Flours</Link>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="disabled-link"
+              >
+                Water Chestnut Flours
+              </a>
             </li>
           </ul>
         </div>
@@ -48,13 +66,25 @@ export default function Footer() {
         </div>
 
         <div className="footer-col">
-          <h4>Social</h4>
-          <div className="social-icons">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="YouTube">▶</a>
-          </div>
+        <h4>Social</h4>
+        <div className="social-icons">
+          <a href="#" aria-label="Facebook">
+            <img src="/images/icon/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <img src="/images/icon/instagram.png" alt="Instagram" />
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <img src="/images/icon/youtube.png" alt="YouTube" />
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <img src="/images/icon/whatsapp.png" alt="YouTube" />
+          </a>
         </div>
+      </div>
 
       </div>
 

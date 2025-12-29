@@ -51,21 +51,37 @@
   color: #000;
 }
 
-/* SOCIAL */
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 14px;
+  align-items: center;
+  margin-top: 8px;
 }
 
-.social-icons span {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #e0e0e0;
+.social-icons a {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 14px;
-  cursor: pointer;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.social-icons a:hover {
+  background: #ff0000;
+  transform: translateY(-2px);
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) invert(1);
 }
 
 /* COPYRIGHT STRIP */
@@ -89,4 +105,15 @@
   .social-icons {
     justify-content: center;
   }
+}
+
+.disabled-link {
+  cursor: default;
+  color: #999;
+  text-decoration: none;
+}
+
+.disabled-link:hover {
+  color: #999;
+  text-decoration: none;
 }
