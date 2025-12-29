@@ -140,29 +140,37 @@
 }
 
 .title-wrapper {
-  text-align: center;
-  margin-bottom: 36px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* mobile safety */
 }
 
-/* Badge refinement */
+
 .title-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #ff4d4d, #d60000);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff2b2b;
   color: #fff;
-  padding: 6px 16px;
+  padding: 6px 14px;
   border-radius: 999px;
   font-size: 12px;
-  letter-spacing: 0.08em;
+  font-weight: 600;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  white-space: nowrap;
 }
+
 
 /* Luxury Title */
 .luxury-title {
   font-size: 36px;
   font-weight: 800;
   letter-spacing: -0.5px;
+  line-height: 1.1;
   color: #111;
   position: relative;
   display: inline-block;
