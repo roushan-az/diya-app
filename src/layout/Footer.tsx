@@ -3,32 +3,37 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
 
-        {/* Logo */}
-        <div className="footer-logo">
-          <img src="/images/diya-logo.png" alt="Diya Tea" />
+      <div className="footer-main">
+
+        <div className="footer-brand">
+          <img src="/images/diya-logo.png" alt="DesiDazzle" />
+          <p>
+            Authentic taste of Mithila, delivered with care.
+          </p>
         </div>
 
-        {/* Shop */}
         <div className="footer-col">
           <h4>Shop</h4>
-          <p>Shop All</p>
+          <ul>
+            <li>Shop All</li>
+            <li>Makhana</li>
+            <li>Flours</li>
+          </ul>
         </div>
 
-        {/* Quick Links */}
         <div className="footer-col">
           <h4>Quick Links</h4>
-          <p>FAQs</p>
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
-          <p>Return, Replacement and</p>
-          <p>Cancellation Policy</p>
+          <ul>
+            <li>FAQs</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Returns & Cancellation</li>
+          </ul>
         </div>
 
-        {/* Social */}
         <div className="footer-col">
-          <h4>Social Links</h4>
+          <h4>Social</h4>
           <div className="social-icons">
             <span>f</span>
             <span>📷</span>
@@ -39,8 +44,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        Copyright © 2025 Diya International. Powered by Tour Planner
+        © 2025 Diya International · Powered by Tour Planner
       </div>
+
     </footer>
   );
 }
