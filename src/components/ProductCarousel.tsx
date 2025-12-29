@@ -1,18 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ProductCarousel.css";
 import { products } from "../data/products";
 
 export default function ProductCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const itemsPerView = () => {
+  const getItemsPerView = () => {
     if (window.innerWidth <= 640) return 1;
     if (window.innerWidth <= 1024) return 3;
     return 4;
   };
 
-  const visible = itemsPerView();
+  // 🔥 NEW: visible is state (not calculated on every render)
+  const [visible, setVisible] = useState(getItemsPerView());
+  const [index, setIndex] = useState(0);
+
+  // 🔥 NEW: handle resize properly
+  useEffect(() => {
+    const handleResize = () => {
+      const newVisible = getItemsPerView();
+      setVisible(newVisible);
+
+      // 🔥 Clamp index so slider never goes empty
+      setIndex((prev) =>
+        Math.min(prev, Math.max(products.length - newVisible, 0))
+      );
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const maxIndex = Math.max(products.length - visible, 0);
 
   const next = () => {
