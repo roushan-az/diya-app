@@ -3,7 +3,7 @@ import ImageRibbon from "../util/ImageRibbon";
 export default function About() {
   return (
     <>
-    <ImageRibbon image="/images/hero/slide2.jpg" alt="About Diya International"/>
+    {/* <ImageRibbon image="/images/hero/slide2.jpg" alt="About Diya International"/> */}
     <section className="about-rich container">
       {/* Hero Title */}
       <header className="about-header">
