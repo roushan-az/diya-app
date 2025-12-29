@@ -177,3 +177,31 @@
   margin: 12px auto 0;
   background: linear-gradient(to right, transparent, #ff0000, transparent);
 }
+
+/* Navigation arrows */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 5;
+  padding: 6px 14px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+/* Track transition */
+.carousel-track {
+  transition: transform 0.45s ease-in-out;
+}
