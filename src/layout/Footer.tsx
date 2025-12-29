@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
@@ -16,28 +17,42 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Shop</h4>
           <ul>
-            <li>Shop All</li>
-            <li>Makhana</li>
-            <li>Flours</li>
+            <li>
+              <Link to="/shop">Shop All</Link>
+            </li>
+            <li>
+              <Link to="/makhana-story">Makhana</Link>
+            </li>
+            <li>
+              <Link to="/flours">Flours</Link>
+            </li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li>FAQs</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-            <li>Returns & Cancellation</li>
+            <li>
+              <Link to="/faqs">FAQs</Link>
+            </li>
+            <li>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/terms">Terms & Conditions</Link>
+            </li>
+            <li>
+              <Link to="/returns">Returns & Cancellation</Link>
+            </li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h4>Social</h4>
           <div className="social-icons">
-            <span>f</span>
-            <span>📷</span>
-            <span>▶</span>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">▶</a>
           </div>
         </div>
 

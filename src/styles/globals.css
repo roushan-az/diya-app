@@ -535,3 +535,44 @@ html, body {
 .card:hover .image-wrapper img {
   transform: scale(1.08);
 }
+
+
+/* FAQs */
+.legal-page {
+  background: #fafafa;
+  padding: 80px 20px;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.legal-title {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.legal-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff0000, #ff7a7a);
+  margin: 20px auto 40px;
+  border-radius: 2px;
+}
+
+.legal-content h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.legal-content p {
+  margin-top: 12px;
+  line-height: 1.8;
+  color: #444;
+}
