@@ -9,12 +9,12 @@
 .top-bar {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 14px 40px;
+  justify-content: space-between;
+  padding: 14px 24px;
 }
 
 .logo {
-  height: 56px;
+  height: 48px;
   width: auto;
 }
 
@@ -35,7 +35,16 @@
 /* Actions */
 .actions {
   display: flex;
+  align-items: center;
   gap: 12px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .account-btn {
@@ -54,6 +63,10 @@
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+}
+
+.site-header {
+  border-bottom: 1px solid #eee;
 }
 
 /* ---------------- NAV BAR ---------------- */
@@ -76,3 +89,33 @@
 .nav-bar a:hover {
   color: #e11b22;
 }
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    padding: 16px 24px;
+    background: #fff;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-bar.open {
+    display: flex;
+  }
+
+  .actions button:not(.menu-toggle) {
+    display: none;
+  }
+}
+
