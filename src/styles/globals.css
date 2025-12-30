@@ -96,20 +96,6 @@ html, body {
   padding: 12px 24px;
 }
 
-.hero {
-  width: 100vw;
-  height: 320px;          /* ribbon height */
-  overflow: hidden;
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;       /* 🔑 stretches image to fit */
-  display: block;
-}
-
-
 /* PRODUCTS */
 .collection {
   padding: 40px 24px;
@@ -184,10 +170,6 @@ html, body {
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .hero img {
-    height: 380px;
-  }
-
   .nav {
     gap: 16px;
     flex-wrap: wrap;
@@ -260,11 +242,6 @@ html, body {
     font-size: 14px;
   }
 
-  /* HERO */
-  .hero img {
-    height: 260px;
-  }
-
   /* COLLECTION */
   .collection {
     padding: 24px 16px;
@@ -317,9 +294,6 @@ html, body {
     grid-template-columns: 1fr;
   }
 
-  .hero img {
-    height: 200px;
-  }
 }
 
 

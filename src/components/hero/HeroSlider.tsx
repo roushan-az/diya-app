@@ -1,3 +1,5 @@
+import "./HeroSlider.css";
+
 export default function HeroSlider() {
   return (
     <section className="hero">
