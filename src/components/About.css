@@ -1,8 +1,8 @@
-/* ========================= 
+/* =========================
    FULL PAGE BACKGROUND
    ========================= */
 
-.story-bg {
+.about-bg {
   width: 100%;
   min-height: 100vh;
   padding: 80px 0;
@@ -10,107 +10,133 @@
   background:
     radial-gradient(
       circle at top left,
-      rgba(255, 182, 193, 0.35), /* light pink */
+      rgba(182, 229, 29, 0.22),
       transparent 55%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(255, 120, 120, 0.25), /* light red */
+      rgba(0, 0, 0, 0.06),
       transparent 60%
     ),
-    #fff2f2;
+    #fff7f7;
 }
 
 /* =========================
-   CONTENT CARD
+   PAGE CONTAINER (CARD)
    ========================= */
 
-.story-page {
+.about-page {
   max-width: 960px;
   margin: 0 auto;
   padding: 52px 42px;
 
-  /* Light grey / whitish card */
+  /* Same card feel as Makhana */
   background: #f8f8f8;
-
   border-radius: 22px;
 
-  /* Soft premium shadow */
   box-shadow:
     0 20px 45px rgba(0, 0, 0, 0.10),
     0 8px 18px rgba(0, 0, 0, 0.06);
 }
 
 /* =========================
-   TYPOGRAPHY
+   HEADER
    ========================= */
 
-.story-title {
+.about-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.about-title {
   font-size: 32px;
   font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   color: #111;
 }
 
-.story-intro {
+.about-tagline {
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
-  margin-bottom: 22px;
   color: #444;
 }
 
 /* =========================
-   STORY BLOCKS
+   CONTENT BLOCKS
    ========================= */
 
-.story-block {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
+.about-block {
   margin-bottom: 18px;
 }
 
-.story-block p {
-  margin-bottom: 8px;
+.about-block h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
 }
 
-.story-block p:last-child {
+.about-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.about-block p:last-child {
   margin-bottom: 0;
 }
 
-/* Highlight box */
-.story-block.highlight {
+/* Highlight section (inner card) */
+.about-block.highlight {
   background: #ffffff;
   padding: 20px 24px;
-  border-left: 4px solid #ff7a7a;
+  border-left: 4px solid #b6e51d;
   border-radius: 12px;
 
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
 }
 
-/* Quote */
-.quote {
-  margin-top: 6px;
-  font-style: italic;
-  color: #666;
+/* =========================
+   LIST
+   ========================= */
+
+.about-list {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.about-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 /* =========================
-   ENDING SECTION
+   SINGLE HIGHLIGHT
    ========================= */
 
-.story-ending {
+.about-highlight-single {
   margin-top: 32px;
   padding: 24px;
   background: #111;
   color: #fff;
   border-radius: 14px;
-  font-size: 16px;
-  line-height: 1.6;
+  text-align: center;
 
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.about-highlight-single h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.about-highlight-single p {
+  font-size: 15px;
+  opacity: 0.9;
 }
 
 /* =========================
@@ -118,16 +144,16 @@
    ========================= */
 
 @media (max-width: 768px) {
-  .story-bg {
+  .about-bg {
     padding: 60px 0;
   }
 
-  .story-page {
+  .about-page {
     padding: 34px 22px;
     border-radius: 18px;
   }
 
-  .story-title {
+  .about-title {
     font-size: 26px;
   }
 }

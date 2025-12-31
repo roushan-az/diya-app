@@ -45,8 +45,9 @@ export default function ProductCarousel() {
       {/* Title */}
       <div className="title-wrapper">
         <span className="title-badge">Handpicked</span>
-        <h2 className="carousel-title luxury-title">
-          DesiDazzle Premium Collection
+        <h2 className="carousel-title luxury-title brand-name">
+          <span className="brand-d">D</span>esi
+          <span className="brand-d">D</span>azzle Premium Collection
         </h2>
       </div>
 

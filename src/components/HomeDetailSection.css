@@ -1,6 +1,7 @@
 .home-detail {
   padding: 80px 20px;
   background: linear-gradient(135deg, #fff5f5, #ffffff);
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .home-detail-container {
@@ -23,14 +24,22 @@
   margin-bottom: 16px;
 }
 
-.home-detail-content h2 {
+/* Brand Heading */
+.brand-heading {
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 12px;
 }
 
-.home-detail-content h2 span {
-  color: #ff0000;
+.brand-name {
+  color: #1a1a1a
+  font-weight: 800;
+}
+
+.brand-d {
+  font-style: italic;
+  font-weight: 800;
+  display: inline-block;
 }
 
 .subtitle {
@@ -47,6 +56,28 @@
   margin-bottom: 24px;
 }
 
+/* Trust Strip */
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+  margin: 24px 0 28px;
+}
+
+.trust-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Highlights */
 .highlights {
   list-style: none;
   padding: 0;
@@ -87,7 +118,11 @@
     justify-content: center;
   }
 
-  .home-detail-content h2 {
+  .brand-heading {
     font-size: 32px;
+  }
+
+  .trust-strip {
+    grid-template-columns: 1fr;
   }
 }

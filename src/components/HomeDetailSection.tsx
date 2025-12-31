@@ -9,8 +9,13 @@ export default function HomeDetailSection() {
         <div className="home-detail-content">
           <span className="badge">Premium Quality</span>
 
-          <h2>
-            Why <span>DesiDazzle</span>?
+          <h2 className="brand-heading">
+            Why{" "}
+            <span className="brand-name">
+              <span className="brand-d">D</span>esi
+              <span className="brand-d">D</span>azzle
+            </span>
+            ?
           </h2>
 
           <p className="subtitle">
@@ -18,10 +23,22 @@ export default function HomeDetailSection() {
           </p>
 
           <p className="description">
-            Directly sourced from the fertile lands of Upper Bihar, DesiDazzle
+            Directly sourced from the fertile lands of Upper Bihar,{" "}
+            <span className="brand-name">
+              <span className="brand-d">D</span>esi
+              <span className="brand-d">D</span>azzle
+            </span>{" "}
             products are hygienically processed and packed with care to preserve
             their natural nutrition, taste, and purity.
           </p>
+
+          {/* Trust Information */}
+          <div className="trust-strip">
+            <div className="trust-item">✅ FSSAI Certified</div>
+            <div className="trust-item">🌱 100% Natural</div>
+            <div className="trust-item">🧪 Lab Tested</div>
+            <div className="trust-item">🚫 0% Additives</div>
+          </div>
 
           <ul className="highlights">
             <li>🌿 Farm-fresh sourcing</li>

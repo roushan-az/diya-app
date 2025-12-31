@@ -141,15 +141,17 @@
 
 .title-wrapper {
   display: flex;
-  align-items: center;
+  align-items: baseline;   /* 🔥 FIX */
   justify-content: center;
   gap: 14px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* mobile safety */
+  flex-wrap: wrap;
 }
 
 
 .title-badge {
+  position: relative;
+  top: -9px; /* optional fine-tune */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -212,4 +214,18 @@
 /* Track transition */
 .carousel-track {
   transition: transform 0.45s ease-in-out;
+}
+
+
+/* Brand name styling */
+.brand-name {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Italic capital D */
+.brand-d {
+  font-style: italic;
+  font-weight: 800;
+  display: inline-block;
 }
