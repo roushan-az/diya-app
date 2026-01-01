@@ -37,6 +37,7 @@ export default function Header() {
       {menuOpen && (
         <div className="mobile-menu">
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="products" onClick={() => setMenuOpen(false)}>Shop</Link>
           <Link to="/makhana-story" onClick={() => setMenuOpen(false)}>Makhana Story</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
