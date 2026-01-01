@@ -12,9 +12,14 @@ export default function QuoteBanner() {
           and everyday wellness — without boring snacks or guilt.
         </p>
 
-        <Link to="/products" className="quote-banner-btn">
+        <Link
+          to="/products"
+          className="quote-banner-btn"
+          onClick={(e) => e.preventDefault()}
+        >
           Shop Premium Makhana
         </Link>
+        
       </div>
     </section>
   );
