@@ -8,14 +8,6 @@ const Contact: React.FC = () => {
 
         {/* LEFT CARD */}
         <div className="contact-info">
-          <div className="info-block">
-            <h4>📍 Location</h4>
-            <p>
-              Diya International<br />
-              Indirapuram, Ghaziabad<br />
-              UP – 201010
-            </p>
-          </div>
 
           <div className="info-block">
             <h4>📞 Phone</h4>
@@ -34,6 +26,16 @@ const Contact: React.FC = () => {
             <h4>✉️ Email</h4>
             <p>info@diyainternational.com</p>
           </div>
+
+          <div className="info-block">
+            <h4>📍 Location</h4>
+            <p>
+              Diya International<br />
+              Indirapuram, Ghaziabad<br />
+              UP – 201010
+            </p>
+          </div>
+
         </div>
 
         {/* RIGHT FORM */}
