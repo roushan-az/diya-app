@@ -13,6 +13,7 @@ import Terms from "../components/faq/Terms";
 import Returns from "../components/faq/Returns";
 import Home from "../components/home/Home";
 import ProductDetails from "../components/product/ProductDetails";
+import ProductsPage from "../components/product-list/ProductsPage";
 
 export function AppRoutes() {
   return (
@@ -28,6 +29,7 @@ export function AppRoutes() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/returns" element={<Returns />} />
+        <Route path="/products" element={<ProductsPage />} />
       </Route>
     </Routes>
   );

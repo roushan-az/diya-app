@@ -18,6 +18,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="nav-links">
           <Link to="/">Home</Link>
+          <Link to="/products">Shop</Link>
           <Link to="/makhana-story">Makhana Story</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact Us</Link>

@@ -4,6 +4,7 @@ export interface Product {
   slug: string;
   price: number;
   originalPrice?: number;
+  weight: string;
   image: string;
   description: string;
 }
@@ -16,6 +17,7 @@ export const products: Product[] = [
     slug: "raw-makhana-200g",
     price: 599,
     originalPrice: 650,
+    weight: "200gm",
     image: "/images/products/raw-makhana.jpg",
     description: "Premium quality raw makhana sourced naturally..."
   },
@@ -25,6 +27,7 @@ export const products: Product[] = [
     slug: "water-chestnut-flour-200g",
     price: 399,
     originalPrice: 450,
+    weight: "200gm",
     image: "/images/products/water-chestnut-flour.jpg",
     description: "Premium quality water chestnut flour sourced naturally..."
   },
@@ -34,6 +37,7 @@ export const products: Product[] = [
     slug: "raw-makhana-200g",
     price: 599,
     originalPrice: 650,
+    weight: "200gm",
     image: "/images/products/raw-makhana.jpg",
     description: "Premium quality raw makhana sourced naturally..."
   },
@@ -43,6 +47,7 @@ export const products: Product[] = [
     slug: "water-chestnut-flour-200g",
     price: 399,
     originalPrice: 450,
+    weight: "200gm",
     image: "/images/products/water-chestnut-flour.jpg",
     description: "Premium quality water chestnut flour sourced naturally..."
   },
@@ -52,6 +57,7 @@ export const products: Product[] = [
     slug: "raw-makhana-200g",
     price: 599,
     originalPrice: 650,
+    weight: "200gm",
     image: "/images/products/raw-makhana.jpg",
     description: "Premium quality raw makhana sourced naturally..."
   },
@@ -61,6 +67,7 @@ export const products: Product[] = [
     slug: "water-chestnut-flour-200g",
     price: 399,
     originalPrice: 450,
+    weight: "200gm",
     image: "/images/products/water-chestnut-flour.jpg",
     description: "Premium quality water chestnut flour sourced naturally..."
   }
