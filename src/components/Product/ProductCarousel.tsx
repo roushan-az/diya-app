@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ProductCarousel.css";
-import { products } from "../data/products";
+import { products } from "../../data/products";
 
 export default function ProductCarousel() {
   const getItemsPerView = () => {

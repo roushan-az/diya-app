@@ -51,7 +51,7 @@ export default function HomeDetailSection() {
         {/* Right Image */}
         <div className="home-detail-image">
           <img
-            src="/images/hero/slide2.jpg"
+            src="/images/slides/slide2.jpg"
             alt="Why DesiDazzle"
           />
         </div>
