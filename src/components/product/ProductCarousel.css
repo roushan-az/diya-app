@@ -36,22 +36,23 @@
    TRACK
    ========================= */
 .carousel-track {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / var(--visible));
   transition: transform 0.45s ease-in-out;
+  width: 100%;
 }
 
 /* =========================
    CARD
    ========================= */
 .product-card {
-  flex: 0 0 25%;
   box-sizing: border-box;
   text-align: center;
-  padding: 14px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 18px;
 }
+
 
 /* Subtle hover (desktop only) */
 @media (hover: hover) {
@@ -193,22 +194,30 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
+  background: transparent;
   border: none;
-  font-size: 40px;
+  font-size: 42px;
+  font-weight: 300;
+  color: #111;
   cursor: pointer;
   z-index: 5;
-  padding: 6px 14px;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.nav-btn:hover {
+  transform: translateY(-50%) scale(1.15);
+  opacity: 0.7;
+}
+
+/* ✅ IMPORTANT CHANGE — move INSIDE viewport */
 .nav-btn.left {
-  left: 10px;
+  left: 14px;
 }
 
 .nav-btn.right {
-  right: 10px;
+  right: 14px;
 }
 
 /* Brand name styling */
