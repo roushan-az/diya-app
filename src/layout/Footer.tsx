@@ -115,7 +115,15 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Diya International · Powered by AYILA
+        © 2025 Diya International · Powered by{" "}
+        <a
+          href="https://ayila.online/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ayila-link"
+        >
+          AYILA
+        </a>
       </div>
 
     </footer>
